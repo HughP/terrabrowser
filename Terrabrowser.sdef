@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="">
+	<suite name="Terrabrowser Suite" code="CrVs" description="Commands and classes for Terrabrowser Scripting">
+		<classes>
+			<class name="application" code="TBrw" description="" inherits="NSCoreSuite.NSApplication">
+				<cocoa class="NSApplication"/>
+				<properties>
+					<property name="decimal latitude" code="tblt" description="Current master latitude in decimal degrees." type="NSNumber">
+						<cocoa method="appleScriptDecimalLatitude"/>
+					</property>
+					<property name="decimal longitude" code="tbln" description="Current master longitude in decimal degrees." type="NSNumber">
+						<cocoa method="appleScriptDecimalLongitude"/>
+					</property>
+				</properties>
+				<responds-to-commands>
+					<responds-to name="reload" code="chmoReld">
+						<cocoa method="appleScriptReload:"/>
+					</responds-to>
+				</responds-to-commands>
+			</class>
+		</classes>
+		<commands>
+			<command name="reload" code="chmoReld" description="Reload map at current master location.">
+				<cocoa class="AppleScriptCommand"/>
+			</command>
+		</commands>
+	</suite>
+</dictionary>
