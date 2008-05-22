@@ -4,7 +4,7 @@ Building instructions for Terrabrowser.
   * Mac OS X 10.4 or later
   * Xcode
   * Interface Builder
-  * Other [http://code.google.com/p/chimoosoftcocoa/ shared Chimoosoft code] to be located in a directory called chimoosoftcocoa next to the kissphrase trunk directory.
+  * Other [http://code.google.com/p/chimoosoftcocoa/ shared Chimoosoft code] to be located in a directory called chimoosoftcocoa next to the terrabrowser trunk directory.
 
 ===Building Instructions===
   * Build as usual.
